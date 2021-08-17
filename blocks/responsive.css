@@ -1,0 +1,58 @@
+@media screen and (max-width: 768px){
+    .title_1 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .title_2 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .paragraph{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .delivery_options{
+        grid-template-columns: 100%;
+    }
+    .box_body {
+        padding: 15px;
+    }
+    .payment_option .icon, .delivery_option .icon {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .box_header_title {
+        font-size: 16px;
+        padding: 10px;
+        line-height: 20px;
+    }
+    .input_group{
+        flex-flow: wrap;
+    }
+    .input_50,.input_65{
+        max-width: 100%;
+    }
+    .input_30,.input_35{
+        max-width: calc(50% - 10px);
+    }
+    .input_25{
+        max-width: calc(50% - 10px);
+    }
+    .input_single input, .input_single select {
+        padding: 4px 10px;
+        height: 35px;
+    }
+    .search_field ~ .search_icon {
+        top: 30px;
+        right: 10px;
+    }
+    .time_box{
+        margin-top: 25px;
+    }
+    .time_options .time_option{
+        margin: 10px 0;
+    }
+    .pay_option_order_view{
+        grid-template-columns: 100%;
+    }
+}

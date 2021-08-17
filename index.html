@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>MultiStep</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="vendor/css/fontawesome_all.min.css">
+	<link rel="stylesheet" href="vendor/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div class="page">
+		<header class="header">
+			<nav class="nav"></nav>
+		</header>
+		<main class="main custom-container">
+			<section class="status_bar">
+				<ul class="progress_bor">
+					<li class="progress_step">
+						<div class="icon">
+							<i class="fa fa-shopping-cart"></i>
+						</div>
+					</li>
+					<li class="progress_step active">
+						<div class="number">
+							<p class="number_text">1</p>
+						</div>
+					</li>
+					<li class="progress_step">
+						<div class="number">
+							<p class="number_text">2</p>
+						</div>
+					</li>
+					<li class="progress_step">
+						<div class="number">
+							<p class="number_text">3</p>
+						</div>
+					</li>
+					<li class="progress_step">
+						<div class="number">
+							<p class="number_text">4</p>
+						</div>
+					</li>
+					<li class="progress_step">
+						<div class="icon">
+							<i class="fa fa-birthday-cake"></i>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<form action="#" class="validateForm">
+				<div class="step_body step_body_1 ">
+					<div class="heading_with_number">
+						<span class="serial_num">1</span>
+						<h1 class="title_1">How would you like to receive the order?</h1>
+					</div>
+					<p class="paragraph mt_5">You can pick up your order in Sint-Niklaas or Antwerp or have it delivered.</p>
+					
+					<div class="delivery_options">
+						<div class="delivery_option">
+							<input class="hidden_input delivery_option_input" type="radio" id="home_delivery" name="delivery_options" value="home">
+							<label for="home_delivery">
+								<div class="box_style">
+									<div class="box_header">
+										<h2 class="box_header_title">Home delivery</h2>
+									</div>
+									<div class="box_body text-center">
+										<i class="fa fa-truck icon"></i>
+										<h2 class="title_2">From tomorrow</h2>
+									</div>
+								</div>
+							</label>
+						</div>
+						<div class="delivery_option">
+							<input class="hidden_input delivery_option_input" type="radio" id="pick_delivery" name="delivery_options" value="pickup">
+							<label for="pick_delivery">
+								<div class="box_style">
+									<div class="box_header">
+										<h2 class="box_header_title">Pick up at Foubert - FREE</h2>
+									</div>
+									<div class="box_body text-center">
+										<i class="fa fa-home icon"></i>
+										<h2 class="title_2">From tomorrow</h2>
+									</div>
+								</div>
+							</label>
+						</div>
+					</div>
+					<div class="address_data">
+						<h2 class="title_1 fw-7 highlight_border_bottom d_in_block">Address data</h2>
+						<p class="paragraph mt_10">Select your previous address or add a new one.</p>
+						<p class="paragraph">Immediate delivery only possible in postcodes 9100 & 9111</p>
+						<div class="mt_10"></div>
+						<div class="input_group">
+							<div class="input_single input_65">
+								<label for="postcode">Postcode and municipality *</label>
+								<input class="input_style search_field" type="text" id="postcode" required>
+								<span class="search_icon">
+										<i class="fa fa-search"></i>
+									</span>
+								<span class="tip paragraph">*Find your zip code or municipality and click on it.</span>
+							</div>
+							<div class="input_single input_35">
+								<label for="country">Country *</label>
+								<select id="country"  required>
+									<option value="option_1">Option - 1</option>
+									<option value="option_2">Option - 2</option>
+									<option value="option_3">Option - 3</option>
+								</select>
+							</div>
+						</div>
+						<div class="input_group">
+							<div class="input_single input_50">
+								<label for="street">Street *</label>
+								<input class="input_style" type="text" id="street" required>
+							</div>
+							<div class="input_single input_25">
+								<label for="house_number">House number *</label>
+								<input class="input_style input_150" type="number" id="house_number" required>
+							</div>
+							<div class="input_single input_25">
+								<label for="bus">Bus</label>
+								<input class="input_style input_150" type="text" id="bus">
+							</div>
+						</div>
+					
+					</div>
+					<div class="collection_point">
+						<h2 class="title_1 fw-7 highlight_border_bottom d_in_block">Collection point</h2>
+						<p class="paragraph">Select your pick-up point.</p>
+						<div class="mt_10"></div>
+						<div class="input_group pick_delivery_input_options">
+							<div class="input_single">
+								<input class="hidden_input pick_delivery_input" type="radio" id="pick_delivery_1" name="pick_delivery" value="home">
+								<label for="pick_delivery_1">
+									<div class="box_style">
+										<div class="box_body text-center">
+											<h2 class="box_header_title p_0">Foubert Sint-Niklaas</h2>
+											<p class="paragraph">Stationsstraat 127, 9100 Sint-Niklaas Belgium</p>
+											<p class="paragraph">7/7 between 12am and 11pm</p>
+											<h2 class="title_2 mt_5">From tomorrow</h2>
+										</div>
+									</div>
+								</label>
+							</div>
+							<div class="input_single">
+								<input class="hidden_input pick_delivery_input" type="radio" id="pick_delivery_2" name="pick_delivery" value="home">
+								<label for="pick_delivery_2">
+									<div class="box_style">
+										<div class="box_body text-center">
+											<h2 class="box_header_title p_0">Foubert Sint-Niklaas</h2>
+											<p class="paragraph">Stationsstraat 127, 9100 Sint-Niklaas Belgium</p>
+											<p class="paragraph">7/7 between 12am and 11pm</p>
+											<h2 class="title_2 mt_5">From tomorrow</h2>
+										</div>
+									</div>
+								</label>
+							</div>
+							<div class="input_single">
+								<input class="hidden_input pick_delivery_input" type="radio" id="pick_delivery_3" name="pick_delivery" value="home">
+								<label for="pick_delivery_3">
+									<div class="box_style">
+										<div class="box_body text-center">
+											<h2 class="box_header_title p_0">Foubert Sint-Niklaas</h2>
+											<p class="paragraph">Stationsstraat 127, 9100 Sint-Niklaas Belgium</p>
+											<p class="paragraph">7/7 between 12am and 11pm</p>
+											<h2 class="title_2 mt_5">From tomorrow</h2>
+										</div>
+									</div>
+								</label>
+							</div>
+						</div>
+					</div>
+					
+					<div class="input_group button_group justify-content_flex-end">
+						<input type="button" value="Next" class="button button_next" onclick="next('.step_body_2',2)">
+					</div>
+				</div>
+				<div class="step_body step_body_2 ">
+					<div class="heading_with_number">
+						<span class="serial_num">2</span>
+						<h1 class="title_1">Select a date and time</h1>
+					</div>
+					<p class="paragraph mt_10">The available dates are below.</p>
+					
+					<div class="input_group step_body_2_content">
+						<div class="input_single datepicker_box">
+							<input type="hidden" class="selected_date">
+							<div id="datepicker"></div>
+						</div>
+						<div class="input_single time_box">
+							<div class="blue_header">
+								<h1 class="heading" id="show_selected_date">Select a date and time</h1>
+							</div>
+							
+							<p class="paragraph mt_5">Choose a time that suits you best</p>
+							<div class="input_group time_options">
+								<div class="input_single time_option">
+									<input class="hidden_input pick_delivery_time_input" type="radio" id="pick_delivery_time_1" name="pick_delivery_time" value="8-12">
+									<label for="pick_delivery_time_1">
+										<div class="box_style">
+											<div class="box_body">
+												<i class="far fa-calendar calender_icon_md"></i>
+												<div class="middle_text">
+													<h2 class="paragraph p_0">All Morning</h2>
+													<p class="paragraph">8:00 pm - 12:00 pm</p>
+												</div>
+												<p class="theme_text paragraph">FREE</p>
+											</div>
+										</div>
+									</label>
+								</div>
+								<div class="input_single time_option">
+									<input class="hidden_input pick_delivery_time_input" type="radio" id="pick_delivery_time_2" name="pick_delivery_time" value="2-12">
+									<label for="pick_delivery_time_2">
+										<div class="box_style">
+											<div class="box_body">
+												<i class="far fa-calendar calender_icon_md"></i>
+												<div class="middle_text">
+													<h2 class="paragraph p_0">All afternoon</h2>
+													<p class="paragraph">2:00 pm - 11:00 pm</p>
+												</div>
+												<p class="theme_text paragraph">FREE</p>
+											</div>
+										</div>
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="input_group button_group mt_10">
+						<input type="button" value="Prev" class="button button_prev"  onclick="prev('.step_body_1',1)">
+						<input type="button" value="Next" class="button button_next"  onclick="next('.step_body_3',3)">
+					</div>
+				</div>
+				<div class="step_body step_body_3 ">
+					<div class="heading_with_number">
+						<span class="serial_num">3</span>
+						<h1 class="title_1">Personal information</h1>
+					</div>
+					<p class="paragraph mt_5">We need your information to complete the order.</p>
+					
+					<div class="personal_info">
+						<div class="input_group">
+							<div class="input_single input_50">
+								<label for="firstName" >First Name *</label>
+								<input class="input_style" type="text" id="firstName" required>
+							</div>
+							<div class="input_single input_50">
+								<label for="lastName" >Last name *</label>
+								<input class="input_style" type="text" id="lastName" required>
+							</div>
+						</div>
+						<div class="input_group">
+							<div class="input_single input_50">
+								<label for="email">E-mail *</label>
+								<input class="input_style" type="email" id="email" required>
+							</div>
+							<div class="input_single input_50">
+								<label for="gsm">GSM *</label>
+								<input class="input_style" type="text" id="gsm" required>
+							</div>
+						</div>
+						<div class="input_single input_50">
+							<label for="newsletter" class="fw-7 title_2 checkbox_inline">Subscribe to the newsletter:</label>
+							<input class="input_style" type="checkbox" id="newsletter">
+						</div>
+						
+						<div class="input_single input_50 d_block mt_20">
+							<label for="invoice" class="fw-7 title_2 checkbox_inline">I want an invoice:</label>
+							<input class="input_style" type="checkbox" id="invoice">
+						</div>
+					</div>
+					
+					<div class="address_data billing_info">
+						<h2 class="title_1 fw-7 highlight_border_bottom d_in_block">Billing Information</h2>
+						<p class="paragraph mt_10">Select your previous billing address or add a new one.</p>
+						<div class="mt_10"></div>
+						<div class="input_group">
+							<div class="input_single input_65">
+								<label for="companyName">Company Name *</label>
+								<input class="input_style" type="text" id="companyName" required>
+							</div>
+							<div class="input_single input_35">
+								<label for="vat_number">VAT number</label>
+								<input class="input_style input_150" type="number" id="vat_number">
+							</div>
+						</div>
+						<div class="input_group">
+							<div class="input_single input_65">
+								<label for="billing_email">Billing email *</label>
+								<input class="input_style" type="text" id="billing_email" required>
+							</div>
+							<div class="input_single input_35">
+								<label for="po_number">PO number </label>
+								<input class="input_style input_150" type="number" id="po_number">
+							</div>
+						</div>
+						<div class="input_group">
+							<div class="input_single input_50">
+								<label for="billing_street">Street *</label>
+								<input class="input_style" type="text" id="billing_street" required="">
+							</div>
+							<div class="input_single input_25">
+								<label for="billing_house_number">House number *</label>
+								<input class="input_style input_150" type="number" id="billing_house_number" required="">
+							</div>
+							<div class="input_single input_25">
+								<label for="billing_bus">Bus</label>
+								<input class="input_style input_150" type="text" id="billing_bus">
+							</div>
+						</div>
+						<div class="input_group">
+							<div class="input_single input_30">
+								<label for="billing_postcode">Post code *</label>
+								<input class="input_style" type="text" id="billing_postcode" required="">
+							</div>
+							<div class="input_single input_35">
+								<label for="township">Township *</label>
+								<input class="input_style input_150" type="number" id="township" required="">
+							</div>
+							<div class="input_single input_35">
+								<label for="billing_country">Country*</label>
+								<input class="input_style input_150" type="text" id="billing_country" required="">
+							</div>
+						</div>
+					
+					</div>
+					
+					<div class="input_group button_group">
+						<input type="button" value="Prev" class="button button_prev"  onclick="prev('.step_body_2',2)">
+						<input type="button" value="Next" class="button button_next"  onclick="next('.step_body_4',4)">
+					</div>
+				</div>
+				<div class="step_body step_body_4">
+					<div class="heading_with_number">
+						<span class="serial_num">4</span>
+						<h1 class="title_1">How would you like to pay?</h1>
+					</div>
+					<p class="paragraph mt_5">
+						You can pay online via bancontact, visa, mastercard, paypal, kbc, ....
+						For home delivery, we require an online payment.
+					</p>
+					<div class="pay_option_order_view">
+						<div class="payment_options">
+							<div class="payment_option">
+								<input class="hidden_input payment_option_input" type="radio" id="payment_option_1" name="payment_options" value="online">
+								<label for="payment_option_1">
+									<div class="box_style">
+										<div class="box_body text-center">
+											<i class="far fa-credit-card icon"></i>
+											<h2 class="title_2">Online</h2>
+											<p class="paragraph mt_10">Bancontact | Credit cards KBC | Belfius | Bank transfer Paypal</p>
+										</div>
+									</div>
+								</label>
+							</div>
+						</div>
+						<div class="order_overview">
+							<div class="box_style">
+								<div class="box_body">
+									<h2 class="title_1 fw-7 highlight_border_bottom d_in_block">Address data</h2>
+									<br>
+									<div class="single_item">
+										<div class="item_info">
+											<h2 class="title_2">DIY Coupes strawberry</h2>
+											<p class="paragraph">1x 4 persons / KIDS EDITION</p>
+										</div>
+										<p class="item_price">€ 29.00</p>
+									</div>
+									<div class="single_item">
+										<div class="item_info">
+											<h2 class="title_2">Shipping costs</h2>
+											<p class="paragraph">Pick up</p>
+										</div>
+										<p class="item_price">€ 0.00</p>
+									</div>
+									<hr>
+									<div class="order_total">
+										<h2 class="title_2">Total</h2>
+										<p class="item_price">€ 29.00</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="input_group button_group">
+						
+						<input type="button" value="Prev" class="button button_prev"  onclick="prev('.step_body_3',3)">
+						<input type="button" value="Place Order" class="button button_next">
+					</div>
+				</div>
+			</form>
+		</main>
+		<footer class="footer">
+		
+		</footer>
+	</div>
+	<script src="vendor/js/jquery.min.js"></script>
+	<script src="vendor/js/jquery.validate.min.js"></script>
+	<script src="vendor/js/jquery-ui.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

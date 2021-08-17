@@ -1,0 +1,51 @@
+.status_bar{
+    padding: 15px;
+}
+.progress_bor{
+    list-style: none;
+    display: flex;
+}
+.progress_step:not(:last-child){
+    position: relative;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.progress_step:not(:last-child):after {
+    content: " ";
+    display: block;
+    position: absolute;
+    height: 2px;
+    left: 30px;
+    right: 0;
+    top: calc(50% - 1px);
+    background-color: #62B5E5;
+}
+.progress_step .icon, .progress_step .number{
+    border: 2px solid var(--theme-color);
+    background-color: var(--theme-color);
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    line-height: 32px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    font-size: 16px;
+}
+
+.progress_step.active:after,
+.progress_step.active ~ .progress_step:not(:last-child):after{
+    background-color: #dbdbdb;
+}
+.progress_step.active .icon,
+.progress_step.active .number,
+.progress_step.active ~ .progress_step .icon,
+.progress_step.active ~ .progress_step .number{
+    border: 2px solid #dbdbdb;
+    background-color: #fff;
+    color: #4a4a4a;
+}
+.progress_step.active .number{
+    border: 2px solid var(--theme-color);
+}
